@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>伝統工芸サイト（和風レイアウト）向け 無料ホームページテンプレート tp_wa2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+
+<h1 id="logo"><a href="index.html"><img src="images/logo_yoko.png" alt="日本伝統工芸館"></a></h1>
+
+<ul class="lang">
+<li><a href="index_en.html">English</a></li>
+</ul>
+
+</header>
+
+<div id="contents">
+
+<main>
+
+<section>
+
+<h2 class="l">当テンプレートの使い方</h2>
+
+<h3>titleタグの設定はとても重要です。念入りにワードを選んで適切に入力しましょう。</h3>
+<p>まず、htmlソースが見れる状態にして、<br>
+<span class="look">&lt;title&gt;伝統工芸サイト（和風レイアウト）向け 無料ホームページテンプレート tp_wa2&lt;/title&gt;</span><br>
+を編集しましょう。<br>
+あなたのホームページ名が「日本伝統工芸館」だとすれば、<br>
+<span class="look">&lt;title&gt;日本伝統工芸館&lt;/title&gt;</span><br>
+とすればＯＫです。SEO対策もするなら冒頭に重要なワードを入れておきましょう。</p>
+
+<h3>copyrightを変更しましょう。</h3>
+<p>続いてhtmlの下の方にある、<br>
+<span class="look">Copyright&copy; 日本伝統工芸館 All Rights Reserved.</span><br>
+の部分もあなたのサイト名に変更します。</p>
+
+<h3>metaタグを変更しましょう。</h3>
+<p>htmlソースが見える状態にしてmetaタグを変更しましょう。</p>
+<p>ソースの上の方に、<br>
+<span class="look">content=&quot;ここにサイト説明を入れます&quot;</span><br>
+という部分がありますので、テキストをサイトの説明文に入れ替えます。検索結果の文面に使われる場合もありますので、見た人が来訪したくなるような説明文を簡潔に書きましょう。</p>
+
+<h3>h1ロゴのaltタグも変更しましょう</h3>
+<p>html側に、<br>
+<span class="look">alt=&quot;日本伝統工芸館&quot;</span><br>
+となっている箇所があるので、この部分もあなたのサイト名に変更しましょう。</p>
+
+</section>
+
+<section>
+
+<h2 class="l">テンプレートの色変更について</h2>
+
+<p>全体のカラー変更は簡単にできます。</p>
+<p>cssフォルダのstyle.cssを開き、冒頭の、<br>
+<span class="look">:root {</span><br>
+の中にある、<br>
+<span class="look">--primary-color:<br>
+〜〜〜</span><br>
+他数行の設定を変更すればサイト全体の色変更ができます。</p>
+<p>※必要に応じて部分的なパーツカラーの調整が必要になる場合もあります。</p>
+
+</section>
+
+<section>
+
+<h2 class="l">アイコン画像について（Font Awesomeの解説）</h2>
+
+<h3>imagesフォルダに入っていない画像（アイコン）は全てFont Awesomeの素材です。</h3>
+<p><a href="https://fontawesome.com/" target="_blank">Font Awesome 公式サイト</a><br>
+<a href="https://fontawesome.com/v6/search" target="_blank">Font Awesome アイコン一覧（※バージョン6）</a></p>
+<p>iタグを使ってhtmlに直接アイコンを読み込む場合と、cssの擬似要素を使って読み込む場合があります。<br>
+それぞれ他のアイコンに置き換えたい場合は、当サイトの<a href="https://template-party.com/tips/tips20211126_font_awesome.html">マニュアル</a>をお読み下さい。</p>
+
+<h3>Font Awesomeを使う為に必要なタグ、ファイル類。</h3>
+<p>cssフォルダのstyle.css冒頭で読み込んでいる「Font Awesomeの読み込み」のブロック。</p>
+
+<h3>何年も経過した場合、動作に問題が出てくる可能性があります。</h3>
+<p>テンプレートを編集していないのに突然動きがおかしくなった場合は、style.cssの冒頭でCDNから読み込んでいるFont Awesome関連のファイルのバージョンを変更して動作するか確認してみて下さい。</p>
+
+</section>
+
+<section>
+
+<h2 class="l">ロゴ画像について</h2>
+<p>画面幅が900px以上の場合は、縦長ロゴ（logo_tate.png）が表示され、900px未満の場合は横長ロゴ（logo_yoko.png）が表示されます。<br>
+logo_yoko.pngについては、英語ページのロゴにも使用されています。</p>
+
+</section>
+
+
+<section>
+
+<h2 class="l">トップページの背景画像について</h2>
+<p>cssフォルダのstyle.cssの最初の方にある、<br>
+<span class="look">/*トップページの背景画像*/</span><br>
+のブロックで背景画像を指定しています。背景画像が不要なら丸ごと削除して下さい。<br>
+置き換えたい場合は、imagesフォルダのbg1.pngをお好みの画像に置き換えて下さい。</p>
+
+</section>
+
+<section>
+
+<h2 class="l">トップページのメイン画像について</h2>
+<p>縦長画像（mainimg_tate.jpg）と、横長画像（mainimg_yoko.jpg）がimagesフォルダに入っていますので、お手持ちの画像と置き換えて下さい。</p>
+<p>画像はcssの背景画像として読み込まれており、画面幅900px以上とそれ未満とで画像が「縦長」or「横長」に切り替わります。</p>
+<p>指定はcssフォルダのstyle.cssの、<br>
+<span class="look">/*メイン画像（アスペクト比2:1の横長）*/</span><br>
+と、<br>
+<span class="look">/*メイン画像（アスペクト比1:2の縦長）*/</span><br>
+のブロックです。</p>
+
+<h3>アスペクト比を変更したい場合</h3>
+<p class="color-check">※「アバウトでいい」という場合はここまで厳密に計算しなくても「いい感じ」に調整すればOKです。縦横比率が違っても余白は発生しないようになっています。</p>
+<p>アスペクト比が違う画像を準備した場合、上記のアスペクト比に自動的に切り抜かれますが変更したい場合の解説です。</p>
+<p><span class="look">/*メイン画像（アスペクト比2:1の横長）*/</span><br>
+の方は900px未満の小さな端末向けでアスペクト比2:1の横長画像になります。<br>
+このアスペクト比を変更したい場合は、<br>
+<span class="look">padding-top: 50%;</span><br>
+の数値を変更します。<br>
+例えばアスペクト比16:9なら、9 ÷ 16 = 0.5625なので、<br>
+<span class="look">padding-top: 56%;</span><br>
+にすればOKです。小数点はあってもなくても構いませんが、ほとんど意味はないので省きました。</p>
+<p><span class="look">/*メイン画像（アスペクト比1:2の縦長）*/</span><br>
+の方は、900px以上の大きな端末向けでアスペクト比1:2の縦長画像になります。<br>
+このアスペクト比を変更したい場合は、<br>
+<span class="look">width: 30vw;</span><br>
+や、<br>
+<span class="look">height: 60vw;</span><br>
+を変更します。<br>
+vwという単位は画面幅に対してのパーセンテージのような認識でOKです。30vwなら画面幅の30%という感じ。heightにもvwと使っていますが、これは画面幅に対して相対的に変形させる為に同じ単位を指定しています。（縦向きの単位はvhというのがあります）</p>
+<p>アスペクト比を9:16にしたい場合、幅はそのままでいいなら、高さは（30vw ÷ 9）× 16＝53.33...vwになるので、<br>
+<span class="look">height: 53vw;</span><br>
+にすればOKです。</p>
+
+</section>
+
+<section>
+
+<h2 class="l">メニューについて</h2>
+
+<h3>ドロップダウンメニューについて</h3>
+<p>「工芸品一覧」メニューにはドロップダウンメニューが設定されています。<br>
+ドロップダウンを使う為の特別な設定は不要ですが、必ず親となるli要素の「中」に入れるようにして下さい。</p> 
+<p>OKな例<br>
+<span class="look">
+<span class="color-check">&lt;li&gt;&lt;a href=&quot;&quot;&gt;親となるメニュー&lt;/a&gt;</span><br>
+&lt;ul&gt;<br>
+&lt;li&gt;&lt;a href=&quot;list.html&quot;&gt;ドロップダウンのメニュー&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;list.html&quot;&gt;ドロップダウンのメニュー&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+<span class="color-check">&lt;/li&gt;</span>
+</span>
+</p>
+<p>NGな例<br>
+<span class="look">
+<span class="color-check">&lt;li&gt;&lt;a href=&quot;&quot;&gt;親となるメニュー&lt;/a&gt;&lt;/li&gt;</span><br>
+&lt;ul&gt;<br>
+&lt;li&gt;&lt;a href=&quot;list.html&quot;&gt;ドロップダウンのメニュー&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;list.html&quot;&gt;ドロップダウンのメニュー&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;
+</span>
+</p>
+
+<h3>アンカーリンク（同一ページ内リンク）を使う場合の注意点</h3>
+<p>同一ページ内へのアンカーリンクの場合、<a href="list.html">list.html</a>のメニューのように、<br>
+<span class="look">&lt;a href=&quot;#link1&quot;&gt;</span><br>
+など、通常のアンカーリンクのhtml指定をして下さい。</p>
+<p>その他のページからは別ページへのアンカーリンクになる為、<br>
+<span class="look">&lt;a href=&quot;list.html#link1&quot;&gt;</span><br>
+などになっていますが、このタグをコピペでlist.htmlにそのまま使用すると、ブラウザはページをリロードしないため、メニューがスムース移動しません。スムースにならなくてもいいならこのコードを全htmlに共通で使ってももちろんOKです。</p>
+
+</section>
+
+<section>
+
+<h2 class="l">トップページのサムネイルスライドショーについて</h2>
+<p>slickを使ったスラドショーになっています。<a href="https://kenwheeler.github.io/slick/" target="_blank">slick 公式サイト</a><br>
+テンプレート内の解説及び、当サイト上でのマニュアル以外のサポートは基本的には行なっておりませんので、使いこなしたい方はGoogle検索などかけてみて下さい。</p>
+
+<div class="thumbnail-slide mb30">
+
+<img src="images/sample1.jpg" alt="">
+<img src="images/sample2.jpg" alt="">
+<img src="images/sample3.jpg" alt="">
+<img src="images/sample1.jpg" alt="">
+<img src="images/sample2.jpg" alt="">
+<img src="images/sample3.jpg" alt="">
+
+</div>
+<!--/.thumbnail-slide-->
+
+<h3>写真の縦横サイズを予め揃えておくと綺麗に並びます</h3>
+<p>枚数は自由に変更できます。html側に既存の写真ブロックをコピペして新しい画像ファイル名に書き換えて下さい。<br>
+スライドショーの設定は、jsフォルダのslick.jsで調整できます。</p>
+<h3>slickを使う為に必要なタグ、ファイル類</h3>
+<p>1. html下部にある、「jQueryファイルの読み込み」のタグ。※下のjsファイルより先に読み込んで下さい。<br>
+2. その下にある、「スライドショー（slick）」からの数行のタグ。<br>
+3. jsフォルダ内の「js/slick.js」。</p>
+
+</section>
+
+<section>
+
+<h2 class="l">トップページの「お知らせ」ブロックのアイコンについて</h2>
+<p>アイコン内のテキストはhtml側で直接入力されていますので必要に応じて編集して下さい。</p>
+<p>背景色は、cssフォルダのstyle.cssの、<br>
+<span class="look">.new dt span</span><br>
+や、<br>
+<span class="look">.new .icon-bg1</span><br>
+や、<br>
+<span class="look">.new .icon-bg2</span><br>
+のbackgroundでそれぞれ変更できます。</p>
+<p>新しいアイコンを追加したい場合、上記の「.new .icon-bg2」ブロックをコピペし、<span class="color-check">.icon-bg2</span>部分を<span class="color-check">.icon-bg3</span>などに変更し、backgroundに好きな色を設定します。<br>
+後はhtml側で、<br>
+<span class="look">&lt;span class=&quot;<span class="color-check">icon-bg3</span>&quot;&gt;〜〜〜&lt;/span&gt;</span><br>
+などとすればOKです。</p>
+<p>尚、あまり文字数が増えるとレイアウトが崩れるので注意して下さい。</p>
+
+</section>
+
+<section class="bg1">
+
+<h2 class="l">背景（bg1）</h2>
+<p><span class="look">&lt;section&gt;</span>を、<br>
+<span class="look">&lt;section <span class="color-check">class=&quot;bg1&quot;</span>&gt;</span><br>
+とするとこのブロックのように背景色がつきます。</p>
+
+</section>
+
+<section>
+
+<h2 class="l">出現アニメーションについて</h2>
+<p>以下のような出現のアニメーションサンプルを<a href="manual_inview.html">manual_inview.html</a>にまとめています。<br>
+好きなアニメーションに簡単に変更できますし、オリジナルのものを作る事もできます。</p>
+
+<p><img src="images/sample1.jpg" alt="" class="blur" width="500"></p>
+<p><img src="images/sample2.jpg" alt="" class="up" width="500"></p>
+<p><img src="images/sample3.jpg" alt="" class="transform1" width="500"></p>
+
+</section>
+
+<section>
+
+<h2 class="l">テーブルレイアウト</h2>
+
+<table class="ta1">
+<caption>大見出しが必要ならここを使います</caption>
+<tr>
+<th>見出し</th>
+<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+</tr>
+<tr>
+<th>見出し</th>
+<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+</tr>
+<tr>
+<th>見出し</th>
+<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+</tr>
+<tr>
+<th>見出し</th>
+<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+</tr>
+<tr>
+<th>見出し</th>
+<td>ここに説明など入れて下さい。サンプルテキスト。</td>
+</tr>
+</table>
+
+</section>
+
+</main>
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<div id="footer-contents">
+
+<div class="left">
+
+<h3>日本伝統工芸館</h3>
+<p>〒000-0000 東京足立区XXXXXX1丁目1号<br>
+代表電話：000-0000-0000<br>
+受付時間：月曜日から金曜日の8時から18時まで</p>
+
+<ul class="icons">
+<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-line"></i></a></li>
+<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+
+<p class="btn"><a href="contact.html">問い合わせ</a></p>
+<p class="btn"><a href="contact.html">資料請求</a></p>
+
+</div>
+<!--/.left-->
+
+<div class="right">
+
+<h3>アクセス</h3>
+<p><a href="https://template-party.com/file/pickup_googlemap.html">GoogleMapの地図を変更する方法はマニュアルをご覧下さい。</a></p>
+<div class="iframe-box">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0448418561778!2d139.74267721573196!3d35.675897837870934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b89b2e1c8b1%3A0x59a123e3d5ac5ab6!2z44CSMTAwLTAwMTQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65rC455Sw55S677yR5LiB55uu77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1545036128899" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+	
+</div>
+<!--/.right-->
+
+</div>
+<!--/#footer-contents-->
+
+<div id="footermenu">
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニューサンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+</div>
+<!--/#footermenu-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">日本伝統工芸館</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<div class="menu-icon">
+<span></span><span></span>
+</div>
+</div>
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="index.html">ホーム<span>Home</span></a></li>
+<li><a href="about.html">当サイトについて<span>About This Site</span></a></li>
+<li><a href="list.html">工芸品一覧<span>Crafts List</span></a>
+	<ul>
+	<li><a href="list.html#link1">工芸品カテゴリー1</a></li>
+	<li><a href="list.html#link2">工芸品カテゴリー2</a></li>
+	<li><a href="list.html#link3">工芸品カテゴリー3</a></li>
+	</ul>
+</li>
+<li><a href="artisans.html">注目の職人紹介<span>Featured Artisans</span></a></li>
+</ul>
+</nav>
+
+</div>
+<!--/#menubar-->
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+</body>
+</html>

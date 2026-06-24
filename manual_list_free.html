@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>伝統工芸サイト（和風レイアウト）向け 無料ホームページテンプレート tp_wa2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+
+<h1 id="logo"><a href="index.html"><img src="images/logo_yoko.png" alt="日本伝統工芸館"></a></h1>
+
+<ul class="lang">
+<li><a href="index_en.html">English</a></li>
+</ul>
+
+</header>
+
+<div id="contents">
+
+<main>
+
+<section>
+
+<h2 class="l">list_freeスタイルの解説</h2>
+<p><a href="list.html">工芸品一覧ページ（list.html）</a>で使っているスタイルですが、お好みでclassをふりわけて臨機応変に使うことができます。</p>
+
+<h3 class="marker">list_freeを使うための必須条件</h3>
+<p><span class="look">&lt;div class=&quot;list-free&quot;&gt;</span><br>
+の中にコンテンツを入れる必要があります。</p>
+
+<h3 class="marker">list_freeの中で使えるコンテンツは以下の３つのコンテンツです。</h3>
+<ul>
+<li><span class="color-check">&lt;h3&gt;</span>…縦書きの見出し。（小さな端末では横書き）</li>
+<li><span class="color-check">&lt;div class=&quot;text&quot;&gt;</span>…テキストが入ったブロック。</li>
+<li><span class="color-check">&lt;div class=&quot;image&quot;&gt;</span>…画像が入ったブロック。</li>
+</ul>
+
+<h3 class="marker">表示順を操作するclass　<span class="color-check">order1</span>〜<span class="color-check">order3</span></h3>
+<p>３つのコンテンツに対して、classでorder1〜order3を割り当てることができます。<br>
+orderは数字の小さな順番で表示されます。<br>
+※小さな端末ではすべて共通で、「h3」→「text」→「image」の順番で表示されます。</p>
+
+<h3 class="marker">上マージンを操作するclass　<span class="color-check">mt1</span>と<span class="color-check">mt2</span></h3>
+<p>３つのコンテンツに対し、上にマージンをとってななめに配置させるのに役立つスタイルです。<br>
+※小さな端末ではこの設定は無効です。</p>
+
+<h3 class="marker">主に画像幅を指定するclass　<span class="color-check">w1</span>と<span class="color-check">w2</span></h3>
+<p>幅を指定する為に、classでw1(width: 30%)とw2(width: 50%)が準備されています。<br>
+imageブロックにお好みで追加して下さい。<br>
+※小さな端末ではこの設定は無効です。</p>
+
+</section>
+
+<section>
+
+<h2 class="l">実際に使ってみましょう。</h2>
+<p>※画面幅600px以上向けのレイアウトです。600px未満だと全て同じレイアウトになります。</p>
+
+<h3 class="marker mb30">サンプル１</h3>
+
+	<div class="list-free">
+
+	<h3 class="order1">h3見出し</h3>
+
+	<div class="text order2">
+	<ul>
+	<li>h3…<span class="color-check">order1</span>を指定。</li>
+	<li>text…<span class="color-check">order2</span>を指定。</li>
+	<li>image…<span class="color-check">order3</span>と幅を指定するための<span class="color-check">w2</span>を指定。</li>
+	</ul>
+	<p>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
+	</div>
+
+	<div class="image w2 order3">
+	<img src="images/sample1.jpg" alt="">
+	</div>
+
+	</div>
+	<!--/.list-free-->
+
+<h3 class="marker mb30">サンプル２</h3>
+
+	<div class="list-free">
+
+	<h3 class="order1">h3見出し</h3>
+
+	<div class="text order2">
+	<ul>
+	<li>h3…<span class="color-check">order1</span>を指定。</li>
+	<li>text…<span class="color-check">order2</span>を指定。</li>
+	<li>image…<span class="color-check">order3</span>と幅を指定するための<span class="color-check">w1</span>を指定。</li>
+	</ul>
+	<p>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
+	</div>
+
+	<div class="image w1 order3">
+	<img src="images/sample1.jpg" alt="">
+	</div>
+
+	</div>
+	<!--/.list-free-->
+
+<h3 class="marker mb30">サンプル３</h3>
+
+	<div class="list-free">
+
+	<h3 class="order3">h3見出し</h3>
+
+	<div class="text order2">
+	<ul>
+	<li>h3…<span class="color-check">order3</span>を指定。</li>
+	<li>text…<span class="color-check">order2</span>を指定。</li>
+	<li>image…<span class="color-check">order1</span>と幅を指定するための<span class="color-check">w2</span>を指定。</li>
+	</ul>
+	<p>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
+	</div>
+
+	<div class="image w2 order1">
+	<img src="images/sample1.jpg" alt="">
+	</div>
+
+	</div>
+	<!--/.list-free-->
+
+<h3 class="marker mb30">サンプル４</h3>
+
+	<div class="list-free">
+
+	<h3 class="order2">h3見出し</h3>
+
+	<div class="text order3">
+	<ul>
+	<li>h3…<span class="color-check">order2</span>を指定。</li>
+	<li>text…<span class="color-check">order3</span>を指定。</li>
+	<li>image…<span class="color-check">order1</span>と幅を指定するための<span class="color-check">w2</span>を指定。</li>
+	</ul>
+	<p>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
+	</div>
+
+	<div class="image w2 order1">
+	<img src="images/sample1.jpg" alt="">
+	</div>
+
+	</div>
+	<!--/.list-free-->
+
+<h3 class="marker mb30">サンプル５</h3>
+
+	<div class="list-free">
+
+	<h3 class="order2 mt1">h3見出し</h3>
+
+	<div class="text order3 mt2">
+	<p>上の「サンプル４」と同じ構成ですが、h3に<span class="color-check">mt1</span>が、textブロックに<span class="color-check">mt2</span>が指定されています。これは上にスペース（マージン）をとるためのもので、縦方向のレイアウトを調整したい場合に使います。</p>
+	<p>このブロックではちょっとわかりづらいかもしれませんが、ある程度のコンテンツがある場合におすすめのレイアウトです。</p>
+	</div>
+
+	<div class="image w2 order1">
+	<img src="images/sample1.jpg" alt="">
+	</div>
+
+	</div>
+	<!--/.list-free-->
+
+<h3 class="marker mb30">サンプル５</h3>
+
+	<div class="list-free">
+
+	<div class="text order2">
+	<h4>※これはh4見出しです</h4>
+	<p>「サンプル１」と同じ内容ですが、見出しにh3を使わずh4を使っています。h4を使う場合は必ずtextブロック内に入れて下さい。</p>
+	<p>h3がないので、縦型の見出しがなくなります。</p>
+	</div>
+
+	<div class="image w2 order3">
+	<img src="images/sample1.jpg" alt="">
+	</div>
+
+	</div>
+	<!--/.list-free-->
+
+<h3 class="marker mb30">サンプル６</h3>
+
+	<div class="list-free">
+
+	<div class="text order2">
+	<p>見出しなしでも使えます。<br>
+	画像にコメントを入れたい場合は、imageブロック内にdivを追加してその中にコメントを入れて下さい。</p>
+	</div>
+
+	<div class="image w2 order3">
+	<img src="images/sample1.jpg" alt="">
+	<div>
+	<p>画像にコメントを入れたい場合は、imageブロック内にdivを追加してその中にコメントを入れて下さい。</p>
+	</div>
+	</div>
+
+	</div>
+	<!--/.list-free-->
+
+<h3 class="marker mb30">サンプル７</h3>
+
+	<div class="list-free">
+
+	<div class="text order2">
+	<p>画像は複数入れられます。<br>
+	ここでは入れていませんが、上の「サンプル６」のように、画像下コメントも入れることはできます。</p>
+	</div>
+
+	<div class="image w2 order3">
+	<img src="images/sample1.jpg" alt="">
+	<img src="images/sample2.jpg" alt="">
+	</div>
+
+	</div>
+	<!--/.list-free-->
+
+</section>
+
+</main>
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<div id="footer-contents">
+
+<div class="left">
+
+<h3>日本伝統工芸館</h3>
+<p>〒000-0000 東京足立区XXXXXX1丁目1号<br>
+代表電話：000-0000-0000<br>
+受付時間：月曜日から金曜日の8時から18時まで</p>
+
+<ul class="icons">
+<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-line"></i></a></li>
+<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+
+<p class="btn"><a href="contact.html">問い合わせ</a></p>
+<p class="btn"><a href="contact.html">資料請求</a></p>
+
+</div>
+<!--/.left-->
+
+<div class="right">
+
+<h3>アクセス</h3>
+<p><a href="https://template-party.com/file/pickup_googlemap.html">GoogleMapの地図を変更する方法はマニュアルをご覧下さい。</a></p>
+<div class="iframe-box">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0448418561778!2d139.74267721573196!3d35.675897837870934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b89b2e1c8b1%3A0x59a123e3d5ac5ab6!2z44CSMTAwLTAwMTQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65rC455Sw55S677yR5LiB55uu77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1545036128899" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+	
+</div>
+<!--/.right-->
+
+</div>
+<!--/#footer-contents-->
+
+<div id="footermenu">
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+<ul>
+<li class="title">メニュー見出し</li>
+<li><a href="#">サンプルメニューサンプルメニューサンプルメニューサンプルメニュー</a></li>
+<li><a href="#">サンプルメニュー</a></li>
+</ul>
+</div>
+<!--/#footermenu-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">日本伝統工芸館</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<div class="menu-icon">
+<span></span><span></span>
+</div>
+</div>
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="index.html">ホーム<span>Home</span></a></li>
+<li><a href="about.html">当サイトについて<span>About This Site</span></a></li>
+<li><a href="list.html">工芸品一覧<span>Crafts List</span></a>
+	<ul>
+	<li><a href="list.html#link1">工芸品カテゴリー1</a></li>
+	<li><a href="list.html#link2">工芸品カテゴリー2</a></li>
+	<li><a href="list.html#link3">工芸品カテゴリー3</a></li>
+	</ul>
+</li>
+<li><a href="artisans.html">注目の職人紹介<span>Featured Artisans</span></a></li>
+</ul>
+</nav>
+
+</div>
+<!--/#menubar-->
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--スライドショー（slick）-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+</body>
+</html>
