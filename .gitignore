@@ -9,3 +9,6 @@ Thumbs.db
 
 # Dependency directories
 node_modules/
+
+# claude.ai 版の出力（music/tools/build-artifact.js）
+music/tools/out/
