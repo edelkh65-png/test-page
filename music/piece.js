@@ -12,6 +12,13 @@
     return node;
   }
 
+  // 分類の印。色は分類のマスタ（categories.color）で決まり、style.css の .badge[data-color] で塗る
+  function categoryBadge(piece) {
+    const badge = el('span', 'badge', piece.category);
+    badge.dataset.color = piece.categoryColor || 'gray';
+    return badge;
+  }
+
   function link(text, href) {
     const a = el('a', '', text);
     a.href = href;
@@ -89,7 +96,7 @@
     const article = el('article', 'panel detail-body');
 
     const top = el('div', 'card-top');
-    top.appendChild(piece.category ? el('span', 'badge', piece.category) : el('span'));
+    top.appendChild(piece.category ? categoryBadge(piece) : el('span'));
     article.appendChild(top);
 
     const title = el('h1', 'detail-title', piece.title);
